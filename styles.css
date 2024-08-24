@@ -238,29 +238,62 @@ header nav ul li a:hover {
     margin-top: 16px;
 }
 
-
-
-
-.portfolio-carousel {
-    width: 100%;
+.slider{
+    width: 800px;
+    height: 800px;
     overflow: hidden;
     position: relative;
-    margin: 20px auto;
+    margin: 0 auto;
+
 }
 
-.carousel {
+.slides{
+    width: 400%;
+    height: 400px;
     display: flex;
-    transition: transform 0.5s ease-in-out;
 }
 
-.carousel-item {
-    min-width: 100%;
-    transition: transform 0.5s ease;
+.slides input {
+    display: none;
 }
 
-.carousel-item img {
-    width: 100%;
-    border-radius: 5px;
-    border: 2px solid #ff9800;
+.slide {
+    width: 25%;
+    position: relative;
 }
 
+.slide img{
+    width: 800px;
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: 370px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-btn:hover{
+    background-color: #FFF;
+}
+
+#radio1:checked ~ .first{
+    margin-left:0;
+}
+
+#radio2:checked ~ .first{
+    margin-left:-33%;
+}
