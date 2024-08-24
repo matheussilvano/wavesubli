@@ -35,12 +35,12 @@
     <section class="slider">
         <div class="slides">
             <!--Radio Buttons-->
-            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio1" checked>
             <input type="radio" name="radio-btn" id="radio2">
             <input type="radio" name="radio-btn" id="radio3">
 
             <!--Slide images-->
-            <div class="slide-1"><img src="portfolio1.png" alt="Portfólio 1"></div>
+            <div class="slide"><img src="portfolio1.png" alt="Portfólio 1"></div>
             <div class="slide"><img src="portfolio2.png" alt="Portfólio 2"></div>
             <div class="slide"><img src="portfolio3.png" alt="Portfólio 3"></div>
         
@@ -120,19 +120,6 @@
     <a href="https://wa.me/SEUNUMERO" class="whatsapp-float" target="_blank">
         <i class="fa fa-whatsapp whatsapp-icon"></i>
     </a>
-
-    <script>
-        let currentIndex = 0;
-        const items = document.querySelectorAll('.carousel-item');
-        const itemCount = items.length;
-    
-        setInterval(() => {
-            items[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex + 1) % itemCount;
-            items[currentIndex].classList.add('active');
-        }, 3000);
-    </script>
-
     
 </body>
 </html>

@@ -247,10 +247,11 @@ header nav ul li a:hover {
 
 }
 
-.slides{
-    width: 400%;
+.slides {
+    width: 300%; /* Ajustado para 3 slides */
     height: 400px;
     display: flex;
+    transition: margin-left 1s ease-in-out; /* Adiciona transição suave */
 }
 
 .slides input {
@@ -258,7 +259,7 @@ header nav ul li a:hover {
 }
 
 .slide {
-    width: 25%;
+    width: 33.33%;
     position: relative;
 }
 
@@ -290,10 +291,14 @@ header nav ul li a:hover {
     background-color: #FFF;
 }
 
-#radio1:checked ~ .first{
-    margin-left:0;
+#radio1:checked ~ .slides {
+    margin-left: 0;
 }
 
-#radio2:checked ~ .first{
-    margin-left:-33%;
+#radio2:checked ~ .slides {
+    margin-left: -100%;
+}
+
+#radio3:checked ~ .slides {
+    margin-left: -200%;
 }
